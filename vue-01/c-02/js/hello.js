@@ -1,7 +1,7 @@
 Vue.createApp({
   data: function() {
     return {
-      message: 'こんにちは世界！'
+      message: 'こんにちは！世界！'
     };
   }
 }).mount('#app');
