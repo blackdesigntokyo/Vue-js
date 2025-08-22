@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-<meta charset="UTF-8" />
-<title>Vue.js</title>
+  <meta charset="UTF-8" />
+  <title>Vue.js</title>
 </head>
+
 <body>
-<div id="app">
-  <p>{{ message }}</p>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/vue@3.2.29/dist/vue.global.js"></script>
-<script src="js/hello.js"></script>
+  <div id="app">
+    <p>{{ message }}</p>
+    <!-- <p>{{ message + message }}</p> -->
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@3.2.29/dist/vue.global.js"></script>
+  <script src="js/hello.js"></script>
 </body>
+
 </html>
+
+<!--
+Vueのテンプレート構文は、HTML内に直接データを埋め込むための特別な記法です。
+・適用する要素:
+<div id="app">: この<div>要素が、Vueアプリケーションが適用される範囲を定義します。IDにappが指定されているので、JavaScriptコードの.mount('#app')と紐づきます。
+<p>{{ message }}</p>: このpタグ内に、{{ message }}というテンプレート構文が使われています。これは、Vueインスタンスのdataオプションで定義されたmessageという変数の値に置き換えられます。
+
+VueとJavaScriptの読み込み
+この部分では、Vueのライブラリと、ユーザーが作成したJavaScriptファイルを読み込んでいます。
+・Vueの読み込み:
+<script src="https://cdn.jsdelivr.net/npm/vue@3.2.29/dist/vue.global.js"></script>: Vue.jsのコアライブラリをCDN（Content Delivery Network）から読み込んでいます。これにより、ブラウザ上でVueの機能を使えるようになります。
+
+・JavaScriptファイルの読み込み:え
+<script src="js/hello.js"></script>: ユーザーが作成したVueアプリケーションのコード（Vue.createApp(...)など）が書かれたhello.jsファイルを読み込んでいます。
+-->
