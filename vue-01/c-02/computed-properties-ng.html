@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Vue.js</title>
+</head>
+
+<body>
+  <div id="app">
+    <p>{{ email.split('@')[0].toLowerCase() }}</p>
+    <!--
+    email.split('@'): emailという文字列を、区切り文字 @ で分割。['ユーザー名', 'ドメイン名'] のような配列が生成されます。
+    [0]: splitで生成された配列の0番目の要素（最初の要素）、つまりユーザー名部分を取り出します。
+    .toLowerCase(): 取り出した文字列のすべてのアルファベットを小文字に変換します。
+    -->
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@3.2.29/dist/vue.global.js"></script>
+  <script src="js/computed-properties-ng.js"></script>
+</body>
+
+</html>
