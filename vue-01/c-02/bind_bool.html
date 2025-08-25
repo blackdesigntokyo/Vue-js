@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>Vue.js</title>
+</head>
+<body>
+<div id="app">
+  <input type="button" value="クリック！" v-bind:disabled="flag" />
+  <!-- `flag`というデータの値に基づいて、ボタンの `disabled`属性 を制御します。
+  この仕組みは、フォームの送信ボタンを、入力内容がすべて有効になるまで無効にしておくなど、
+  ユーザーインターフェースの状態を動的に制御する際に非常に役立ちます -->
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@3.2.29/dist/vue.global.js"></script>
+<script src="js/bind_bool.js"></script>
+</body>
+</html>
