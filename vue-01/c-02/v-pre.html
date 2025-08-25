@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>Vue.js</title>
+</head>
+<body>
+<div id="app">
+  <p v-pre>{{ message }}</p>
+  <!-- v-pre は、Vue.jsのテンプレート内で、要素とその全ての子要素のコンパイルをスキップするための特別なディレクティブです。これにより、中身がプレーンテキストとして扱われるため、{{ message }} のようなVueの構文がそのまま表示されます。 -->
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@3.2.29/dist/vue.global.js"></script>
+<script src="js/v-pre.js"></script>
+</body>
+</html>
